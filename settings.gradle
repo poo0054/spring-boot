@@ -82,3 +82,8 @@ file("${rootDir}/spring-boot-project/spring-boot-starters").eachDirMatch(~/sprin
 file("${rootDir}/spring-boot-tests/spring-boot-smoke-tests").eachDirMatch(~/spring-boot-smoke-test.*/) {
 	include "spring-boot-tests:spring-boot-smoke-tests:${it.name}"
 }
+
+file("${rootDir}/spring-boot-studies/spring-boot-study-data").eachDirMatch(~/spring-boot-study-data.*/) {
+	include "spring-boot-studies:spring-boot-study-data:${it.name}"
+}
+
